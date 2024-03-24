@@ -413,9 +413,16 @@ ul, ol {
     background-color: var(--navy-blue);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/hero-bg.jpg);
     padding: 112px 0;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/hero-bg@2x.jpg);
+    }
 }
 @media screen and (min-width: 1158px) {
     .hero {
